@@ -1,6 +1,6 @@
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
-const tips = []
-const totals = []
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
 
 function calcTip(bilValue) {
     let tip = 0;
@@ -9,28 +9,26 @@ function calcTip(bilValue) {
     } else {
         tip = bilValue * 0.2;
     }
-    return tip
+    return tip;
 }
 
 for (let index = 0; index < bills.length; index++) {
-    const tip = calcTip(bills[index])
-    tips.push(tip)
-    totals.push(bills[index] + tip)
+    const tip = calcTip(bills[index]);
+    tips.push(tip);
+    totals.push(bills[index] + tip);
 }
 
 console.log(bills, tips, totals);
 
 function calcAverage(arr) {
-    let sum = 0
+    let sum = 0;
     for (let i = 0; i < arr.length; i++) {
-        sum += arr[i]
+        sum += arr[i];
     }
-    return sum / arr.length
+    return sum / arr.length;
 }
 
-console.log(calcAverage(totals))
-
-
+console.log(calcAverage(totals));
 
 // Let's improve Steven's tip calculator even more, this time using loops!
 // Your tasks:
