@@ -1,3 +1,5 @@
+//        closer-look-of-heap-vs-stack
+
 const flight = 'AB123'
 const georgi = {
   name: 'Georgi Y.',
